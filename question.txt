@@ -1,0 +1,16 @@
+A vehicle is a public class, that has two member variables: type & name
+It must have a virtual function, go - which displays "Driving" (Not pure virtual)
+It must also have a static member, vehicleCount, which gets incremented in the vehicle constructor
+The static member must be displayd in the go function
+
+A car is a public class, whose derived from the vehicle class. 
+It has two additional member variables: color, seats
+
+A motorcycle is a public class, whose derived from the vehicle class.
+It has one additional member variable: horsepower
+
+The user must be prompted inputs to populate a dynamic array of (n) vehicles. Assuming only even numbers are allowed, half of the array must be cars, and the rest motorcycles.
+
+The user must then be given the opportunity to resize the dynamic array, to add one more object of their choice - either a motorcycle or car. 
+
+Each object in the dynamic array must be then copied to a static array of unions - each of which contain pointers to "node" unions, which contain a reference to the object from earlier 
